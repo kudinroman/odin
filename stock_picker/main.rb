@@ -6,16 +6,27 @@ puts
 
 prices = [17,3,6,9,15,8,6,1,10]
 
-def stock_picker(numbers_arr)
-    max = numbers_arr.drop(1).max
-    puts 'Max: ' + max.to_s
-    max_index = numbers_arr.index(max)
-    puts 'Max index: ' + max_index.to_s
-    min = numbers_arr.take(max_index).min
-    puts 'Min: ' + min.to_s
-    min_index = numbers_arr.index(min)
-    puts 'Min index: ' + min_index.to_s
-    [min_index, max_index]
+def stock_picker(numbers)
+    buy = 0
+    sell = 0
+    numbers.each_index do |i|
+        first = numbers[i]
+        for index in (i)..(numbers.length - 1)
+            second = numbers[index]
+            # puts "[#{first} - #{second}]"
+            if first < second && diff(first, second) > diff(buy, sell)
+                buy = first
+                sell = second
+                # puts "New values: [#{buy} - #{sell}]"
+            end
+        end
+    end
+
+    "[#{numbers.index(buy)}:#{numbers.index(sell)}]"
 end
 
-puts stock_picker(prices).to_s
+def diff(buy, sell)
+    sell - buy
+end
+
+puts stock_picker(prices)
