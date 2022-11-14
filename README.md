@@ -6,6 +6,8 @@ https://www.theodinproject.com/lessons/ruby-caesar-cipher
 https://www.theodinproject.com/lessons/ruby-sub-strings
 ## Stock Picker
 https://www.theodinproject.com/lessons/ruby-stock-picker
+## Bubble Sort
+https://www.theodinproject.com/lessons/ruby-bubble-sort
 
 1. Inside terminal go to project directory (odin/caesar_cipher)
 2. Enter text **ruby main.rb**
