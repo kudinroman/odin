@@ -1,5 +1,5 @@
 # caesar cipher
-require_relative 'lib'
+require_relative './lib'
 main_answer = ""
 
 puts "It's Caesar Cipher App!"

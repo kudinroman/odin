@@ -16,3 +16,6 @@ https://www.theodinproject.com/lessons/ruby-bubble-sort
 
 ## Object Oriented Programming Basics
 https://www.theodinproject.com/lessons/ruby-tic-tac-toe
+
+## Files and Serialization
+https://www.theodinproject.com/lessons/ruby-event-manager
