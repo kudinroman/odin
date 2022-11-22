@@ -62,7 +62,7 @@ puts
 # Day of the Week Targeting
 #================================================================
 
-people_registered_weeks = dates
+people_registered_weekdays = dates
     .map { |date| parse_time_s(date) }
     .reduce(Hash.new(0)) do |obj, date|
         weekday = Date::DAYNAMES[date.wday]
@@ -70,7 +70,7 @@ people_registered_weeks = dates
         obj
 end
 
-week_targeting = people_registered_weeks.max_by { |week, count| count }[0]
-puts "People registered by weeks: #{people_registered_weeks}"
-puts "Week Targeting => #{week_targeting}"
+weekday_targeting = people_registered_weekdays.max_by { |weekday, count| count }[0]
+puts "People registered by weekdays: #{people_registered_weekdays}"
+puts "Weekday Targeting => #{weekday_targeting}"
 puts
