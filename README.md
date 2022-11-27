@@ -19,3 +19,9 @@ https://www.theodinproject.com/lessons/ruby-tic-tac-toe
 
 ## Files and Serialization
 https://www.theodinproject.com/lessons/ruby-event-manager
+
+
+
+## Project: Custom Enumerables
+https://www.theodinproject.com/lessons/ruby-custom-enumerables
+### Follow the instructions in the README to get the repo setup locally
